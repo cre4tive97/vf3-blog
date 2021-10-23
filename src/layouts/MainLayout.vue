@@ -1,6 +1,3 @@
-<script setup lang="ts">
-import AuthBtn from 'components/auth/AuthBtn.vue';
-</script>
 <template>
   <q-layout view="hhh lpr fff" :container="false">
     <q-header>
@@ -14,3 +11,18 @@ import AuthBtn from 'components/auth/AuthBtn.vue';
     <router-view />
   </q-page-container>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue';
+import AuthBtn from 'components/auth/AuthBtn.vue';
+
+export default defineComponent({
+  name: 'MainLayout',
+  components: {
+    AuthBtn,
+  },
+
+  setup() {
+    //
+  },
+});
+</script>
