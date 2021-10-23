@@ -45,26 +45,19 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { initializeApp } from 'firebase/app';
-import firebaseConfig from '../../../firebaseConfig';
 import {
-  getAuth,
-  connectAuthEmulator,
   GoogleAuthProvider,
   signInWithPopup,
   onAuthStateChanged,
   User,
   signOut,
 } from 'firebase/auth';
+import { auth } from 'boot/firebase';
 
 export default defineComponent({
   name: 'AuthBtn',
 
   setup() {
-    initializeApp(firebaseConfig);
-    const auth = getAuth();
-    connectAuthEmulator(auth, 'http://localhost:9099');
-    auth.useDeviceLanguage();
     const provider = new GoogleAuthProvider();
     const firebaseUser = ref<User | null>(null);
     onAuthStateChanged(auth, (user) => {
