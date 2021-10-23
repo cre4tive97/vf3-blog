@@ -1,0 +1,160 @@
+[debug] [2021-10-23T05:35:50.115Z] ----------------------------------------------------------------------
+[debug] [2021-10-23T05:35:50.116Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2021-10-23T05:35:50.117Z] CLI Version:   9.21.0
+[debug] [2021-10-23T05:35:50.117Z] Platform:      darwin
+[debug] [2021-10-23T05:35:50.117Z] Node Version:  v16.10.0
+[debug] [2021-10-23T05:35:50.121Z] Time:          Sat Oct 23 2021 14:35:50 GMT+0900 (일본 표준시)
+[debug] [2021-10-23T05:35:50.122Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-23T05:35:50.145Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-23T05:35:50.145Z] > authorizing via signed-in user (harryborrison5148@gmail.com)
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage"}}
+[debug] [2021-10-23T05:35:50.155Z] [hub] writing locator at /var/folders/_9/r__40b416s5cx535pjm8lpzw0000gn/T/hub-vf3-blog-cfc4c.json
+[warn] ⚠  Your requested "node" version "14" doesn't match your global version "16" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"14\" doesn't match your global version \"16\""}}
+[debug] [2021-10-23T05:35:50.188Z] defaultcredentials: writing to file /Users/harry/.config/firebase/harryborrison5148_gmail_com_application_default_credentials.json
+[debug] [2021-10-23T05:35:50.192Z] Setting GAC to /Users/harry/.config/firebase/harryborrison5148_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/harry/.config/firebase/harryborrison5148_gmail_com_application_default_credentials.json"}}
+[debug] [2021-10-23T05:35:50.193Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/adminSdkConfig [none]
+[debug] [2021-10-23T05:35:50.766Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/adminSdkConfig 200
+[debug] [2021-10-23T05:35:50.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/adminSdkConfig {"projectId":"vf3-blog-cfc4c","databaseURL":"https://vf3-blog-cfc4c-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"vf3-blog-cfc4c.appspot.com","locationId":"asia-northeast1"}
+[debug] [2021-10-23T05:35:51.059Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-10-23T05:35:51.060Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-23T05:35:51.060Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/harry/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",8081,"--rules","/Users/harry/Desktop/harry/projects/vf3-blog/y","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/harry/.cache/firebase/emulators/cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",8081,\"--rules\",\"/Users/harry/Desktop/harry/projects/vf3-blog/y\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-10-23T05:35:52.128Z] Oct 23, 2021 2:35:52 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://localhost:56916
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 23, 2021 2:35:52 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://localhost:56916\n"}}
+[debug] [2021-10-23T05:35:52.140Z] API endpoint: http://localhost: {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://localhost:"}}
+[debug] [2021-10-23T05:35:52.140Z] 8081
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8081
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"8081\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8081\n\nDev App Server is now running.\n\n"}}
+[debug] [2021-10-23T05:35:52.347Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c [none]
+[debug] [2021-10-23T05:35:52.808Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c 200
+[debug] [2021-10-23T05:35:52.809Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c {"projectId":"vf3-blog-cfc4c","projectNumber":"589499622578","displayName":"vf3-blog","name":"projects/vf3-blog-cfc4c","resources":{"hostingSite":"vf3-blog-cfc4c","realtimeDatabaseInstance":"vf3-blog-cfc4c-default-rtdb","storageBucket":"vf3-blog-cfc4c.appspot.com","locationId":"asia-northeast1"},"state":"ACTIVE"}
+[debug] [2021-10-23T05:35:52.809Z] database rules config:  [{"instance":"vf3-blog-cfc4c-default-rtdb","rules":"/Users/harry/Desktop/harry/projects/vf3-blog/database.rules.json"}]
+[info] i  database: downloading firebase-database-emulator-v4.7.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.7.2.jar..."}}
+[debug] [2021-10-23T05:35:52.813Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 
+[debug] [2021-10-23T05:35:53.628Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 200
+[debug] [2021-10-23T05:35:53.628Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [stream]
+[debug] [2021-10-23T05:35:55.355Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-10-23T05:35:55.355Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-23T05:35:55.355Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2021-10-23T05:35:55.355Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/harry/.cache/firebase/emulators/firebase-database-emulator-v4.7.2.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/harry/.cache/firebase/emulators/firebase-database-emulator-v4.7.2.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2021-10-23T05:35:55.871Z] 14:35:55.870 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"14:35:55.870 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2021-10-23T05:35:55.937Z] 14:35:55.936 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"14:35:55.936 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[info] i  pubsub: downloading pubsub-emulator-0.1.0.zip... {"metadata":{"emulator":{"name":"pubsub"},"message":"downloading pubsub-emulator-0.1.0.zip..."}}
+[debug] [2021-10-23T05:35:57.150Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip 
+[debug] [2021-10-23T05:35:57.452Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip 200
+[debug] [2021-10-23T05:35:57.452Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip [stream]
+[debug] [2021-10-23T05:35:59.282Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-10-23T05:35:59.283Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-23T05:35:59.283Z] Starting Pub/Sub Emulator with command {"binary":"/Users/harry/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator","args":["--host=localhost","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"/Users/harry/.cache/firebase/emulators/pubsub-emulator-0.1.0/pubsub-emulator/bin/cloud-pubsub-emulator\",\"args\":[\"--host=localhost\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2021-10-23T05:35:59.613Z] This is the Google Pub/Sub fake.
+Implementation may be incomplete or differ from the real system.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"This is the Google Pub/Sub fake.\nImplementation may be incomplete or differ from the real system.\n"}}
+[debug] [2021-10-23T05:35:59.634Z] 10월 23, 2021 2:35:59 오후 com.google.cloud.pubsub.testing.v1.Main main
+INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"10월 23, 2021 2:35:59 오후 com.google.cloud.pubsub.testing.v1.Main main\nINFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported\n"}}
+[debug] [2021-10-23T05:35:59.785Z] 10월 23, 2021 2:35:59 오후 io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround
+INFO: Unable to apply Java 7 long hostname workaround.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"10월 23, 2021 2:35:59 오후 io.gapi.emulators.netty.NettyUtil applyJava7LongHostnameWorkaround\nINFO: Unable to apply Java 7 long hostname workaround.\n"}}
+[debug] [2021-10-23T05:35:59.830Z] 10월 23, 2021 2:35:59 오후 com.google.cloud.pubsub.testing.v1.Main main
+INFO: Server started, listening on 8085
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"10월 23, 2021 2:35:59 오후 com.google.cloud.pubsub.testing.v1.Main main\nINFO: Server started, listening on 8085\n"}}
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.0.1.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.0.1.jar..."}}
+[debug] [2021-10-23T05:36:00.071Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.0.1.jar 
+[debug] [2021-10-23T05:36:00.100Z] 10월 23, 2021 2:36:00 오후 io.gapi.emulators.grpc.GrpcServer$3 operationComplete
+INFO: Adding handler(s) to newly registered Channel.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"10월 23, 2021 2:36:00 오후 io.gapi.emulators.grpc.GrpcServer$3 operationComplete\nINFO: Adding handler(s) to newly registered Channel.\n"}}
+[debug] [2021-10-23T05:36:00.374Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.0.1.jar 200
+[debug] [2021-10-23T05:36:00.374Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.0.1.jar [stream]
+[debug] [2021-10-23T05:36:01.700Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-10-23T05:36:01.785Z] Temp file directory for storage emulator: /var/folders/_9/r__40b416s5cx535pjm8lpzw0000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/_9/r__40b416s5cx535pjm8lpzw0000gn/T/firebase/storage/blobs"}}
+[debug] [2021-10-23T05:36:02.307Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/sites 
+[debug] [2021-10-23T05:36:02.808Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/sites 200
+[debug] [2021-10-23T05:36:02.808Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/sites {"sites":[{"name":"projects/589499622578/sites/vf3-blog-cfc4c","defaultUrl":"https://vf3-blog-cfc4c.web.app","appId":"1:589499622578:web:1d19592648da09218415ab","type":"DEFAULT_SITE"}]}
+[debug] [2021-10-23T05:36:02.809Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/webApps/1:589499622578:web:1d19592648da09218415ab/config [none]
+[debug] [2021-10-23T05:36:04.482Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/webApps/1:589499622578:web:1d19592648da09218415ab/config 200
+[debug] [2021-10-23T05:36:04.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vf3-blog-cfc4c/webApps/1:589499622578:web:1d19592648da09218415ab/config {"projectId":"vf3-blog-cfc4c","appId":"1:589499622578:web:1d19592648da09218415ab","databaseURL":"https://vf3-blog-cfc4c-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"vf3-blog-cfc4c.appspot.com","locationId":"asia-northeast1","apiKey":"AIzaSyAAnd1bQQVrAIHLDlqNlMmjMw32lpFl1ac","authDomain":"vf3-blog-cfc4c.firebaseapp.com","messagingSenderId":"589499622578","measurementId":"G-04GY19Q1PY"}
+[info] i  hosting: Serving hosting files from: dist/spa {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/spa\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.6.4.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.6.4.zip..."}}
+[debug] [2021-10-23T05:36:04.803Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.4.zip 
+[debug] [2021-10-23T05:36:05.299Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.4.zip 200
+[debug] [2021-10-23T05:36:05.299Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.4.zip [stream]
+[debug] [2021-10-23T05:36:05.715Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-10-23T05:36:05.715Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-10-23T05:36:05.715Z] Starting Emulator UI with command {"binary":"node","args":["/Users/harry/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/harry/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-10-23T05:36:05.769Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/harry/Desktop/harry/projects/vf3-blog/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/harry/Desktop/harry/projects/vf3-blog/functions\" for Cloud Functions..."}}
+[debug] [2021-10-23T05:36:05.993Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-10-23T05:36:05.994Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-10-23T05:36:05.994Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-10-23T05:36:05.995Z] [worker-~diagnostic~-cbcb3dd7-2f42-49eb-a7f6-a33ac3ebc478]: Assigning socketPath: /var/folders/_9/r__40b416s5cx535pjm8lpzw0000gn/T/fire_emu_89777.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-cbcb3dd7-2f42-49eb-a7f6-a33ac3ebc478]: Assigning socketPath: /var/folders/_9/r__40b416s5cx535pjm8lpzw0000gn/T/fire_emu_89777.sock"}}
+[debug] [2021-10-23T05:36:05.995Z] [worker-~diagnostic~-cbcb3dd7-2f42-49eb-a7f6-a33ac3ebc478]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-cbcb3dd7-2f42-49eb-a7f6-a33ac3ebc478]: BUSY"}}
+[debug] [2021-10-23T05:36:06.102Z] [runtime-status] [89777] Functions runtime initialized. {"cwd":"/Users/harry/Desktop/harry/projects/vf3-blog/functions","node_version":"16.10.0"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Functions runtime initialized. {\"cwd\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions\",\"node_version\":\"16.10.0\"}"}}
+[debug] [2021-10-23T05:36:06.102Z] [runtime-status] [89777] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Disabled runtime features: undefined"}}
+[debug] [2021-10-23T05:36:06.104Z] [runtime-status] [89777] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-10-23T05:36:06.105Z] [runtime-status] [89777] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-23T05:36:06.106Z] [runtime-status] [89777] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-10-23T05:36:06.106Z] [runtime-status] [89777] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-23T05:36:06.128Z] [runtime-status] [89777] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-10-23T05:36:06.128Z] [runtime-status] [89777] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2021-10-23T05:36:06.128Z] [runtime-status] [89777] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-23T05:36:06.128Z] [runtime-status] [89777] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-10-23T05:36:06.129Z] [runtime-status] [89777] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.15.7\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-10-23T05:36:06.129Z] [runtime-status] [89777] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [89777] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/harry/Desktop/harry/projects/vf3-blog/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2021-10-23T05:36:06.130Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=vf3-blog-cfc4c-default-rtdb  
+ {
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+
+[debug] [2021-10-23T05:36:06.131Z] [worker-~diagnostic~-cbcb3dd7-2f42-49eb-a7f6-a33ac3ebc478]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-cbcb3dd7-2f42-49eb-a7f6-a33ac3ebc478]: IDLE"}}
+[debug] [2021-10-23T05:36:06.299Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"vf3-blog-cfc4c-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"11ea29ba-c28a-4670-8cae-a5a48e6af640"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8081 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ localhost:8085 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-10-23T05:36:51.849Z] Oct 23, 2021 2:36:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 23, 2021 2:36:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-10-23T05:36:52.080Z] Oct 23, 2021 2:36:52 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 23, 2021 2:36:52 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
